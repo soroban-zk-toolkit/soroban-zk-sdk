@@ -1,0 +1,23 @@
+{
+  "name": "@soroban-zk/sdk",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  },
+  "dependencies": {
+    "snarkjs": "^0.7.0",
+    "node-fetch": "^3.0.0"
+  }
+}
