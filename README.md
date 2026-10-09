@@ -9,6 +9,22 @@
 
 > Alpha release — API is unstable. Not audited. Do not use in production.
 
+The package currently exports the Merkle, nullifier, witness, proof-generation,
+verifier-client, and general client helpers from `src/index.ts`. It does not
+ship circuit proving keys or a deployed verifier contract; those must be
+provided by the integrating application.
+
+## Local development
+
+```bash
+npm install
+npm run build
+```
+
+The published API is the generated `dist/` output. Keep circuit artifacts and
+network configuration outside the package and pass them explicitly to the
+proof and verifier helpers.
+
 ---
 
 ## Features
