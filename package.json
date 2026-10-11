@@ -5,7 +5,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p .",
-    "test": "jest --passWithNoTests",
+    "test": "jest --preset ts-jest --passWithNoTests",
     "lint": "eslint . --ext .ts",
     "prepare": "npm run build"
   },
